@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import { Link } from "react-router-dom";
+import dayjs from "dayjs";  // its easy for use beacuse moment have a lot of more functionality, we will not use
+import relativeTime from 'dayjs/plugin/relativeTime';
 // MUI Stuff
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -23,6 +25,7 @@ const styles = {
 
 class Scream extends Component {
   render() {
+    dayjs.extend(relativeTime);
     // const classes = this.props.classes 
     const {
       classes,
@@ -42,7 +45,7 @@ class Scream extends Component {
         <CardMedia image={userImage} title="Profile image" className={classes.image}/>
         <CardContent className={classes.content}>
           <Typography variant="h5" component={Link} to={`/users/${userHandle}`} color='primary'>{userHandle}</Typography>
-          <Typography variant="body2" color="textSecondary">{createdAt._seconds} {createdAt._nanoseconds}</Typography>
+          <Typography variant="body2" color="textSecondary">{dayjs(createdAt._seconds).fromNow()} {createdAt._nanoseconds}</Typography>
           <Typography variant="body1">{body}</Typography>
         </CardContent>
       </Card>
