@@ -4,10 +4,16 @@ import './App.css';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
 import jwtDecode from 'jwt-decode';
+
+// Redux
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
 //components
 import Navbar from "./components/Navbar";
 import themeFile from './util/theme';
 import AuthRoute from './util/AuthRoute';
+
 //pages
 import home from "./pages/home";
 import login from "./pages/login";
@@ -31,7 +37,7 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider theme={theme}>
-        <div className="App">
+        <Provider store={store}>
           <Router>
             <Navbar/>
             <div className="container">
@@ -42,7 +48,7 @@ class App extends Component {
               </Switch>
             </div>
           </Router>
-        </div>
+        </Provider>
       </MuiThemeProvider>
     );
   }
