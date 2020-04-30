@@ -22,7 +22,8 @@ export default {
     },
     image: {
       margin: "20px auto 20px auto",
-      width: "100px"
+      width: "100px",
+      paddingTop: '56.25%' // 16:9
     },
     pageTitle: {
       margin: "10px auto 10px auto"
