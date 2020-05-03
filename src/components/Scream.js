@@ -47,10 +47,10 @@ class Scream extends Component {
     }
   };
   likeScream = () => {
-    this.props.likeScream(this.props.screamId);
+    this.props.likeScream(this.props.scream.screamId);
   };
   unlikeScream = () => {
-    this.props.unlikeScream(this.props.screamId);
+    this.props.unlikeScream(this.props.scream.screamId);
   };
   render() {
     dayjs.extend(relativeTime);
