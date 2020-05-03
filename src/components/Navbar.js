@@ -25,7 +25,7 @@ class Navbar extends Component {
               <MyButton tip="Post a scream">
                 <AddIcon/>
               </MyButton>
-              <Link>
+              <Link to="/">
                 <MyButton tip="Home">
                   <HomeIcon/>
                 </MyButton>
