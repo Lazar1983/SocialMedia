@@ -60,7 +60,7 @@ class CommentForm extends Component {
             color="primary"
             className={classes.button}
           >
-            Submit
+            Објави
           </Button>
         </form>
         <hr className={classes.visibleSeparator} />

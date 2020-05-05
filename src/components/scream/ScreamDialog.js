@@ -119,11 +119,11 @@ class ScreamDialog extends Component {
           <hr className={classes.invisibleSeparator} />
           <Typography variant="body1">{body}</Typography>
           <LikeButton screamId={screamId} />
-          <span>{likeCount} likes</span>
+          <span>{likeCount} допаѓања</span>
           <MyButton tip="comments">
             <ChatIcon color="primary" />
           </MyButton>
-          <span>{commentCount} comments</span>
+          <span>{commentCount} коментари</span>
         </Grid>
         <hr className={classes.visibleSeparator} />
         <CommentForm screamId={screamId} />

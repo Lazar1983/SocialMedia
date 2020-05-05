@@ -32,13 +32,13 @@ class Navbar extends Component {
           ) : (
             <Fragment>
               <Button color="inherit" component={Link} to="/login">
-                Login
+                Најави се
               </Button>
               <Button color="inherit" component={Link} to="/">
-                Home
+                Насловна страна
               </Button>
               <Button color="inherit" component={Link} to="/signup">
-                Signup
+                Регистрирај се
               </Button>
             </Fragment>
           )}

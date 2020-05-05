@@ -60,7 +60,7 @@ class login extends Component {
         <Grid item sm>
           <img src={AppIcon} alt="logo" className={classes.image} />
           <Typography variant="h2" className={classes.pageTitle}>
-            Login
+            Најави се
           </Typography>
           <form noValidate onSubmit={this.handleSubmit}>
             <TextField
@@ -99,14 +99,14 @@ class login extends Component {
               className={classes.button}
               disabled={loading}
             >
-              Login
+              Најави се
               {loading && (
                 <CircularProgress size={30} className={classes.progress} />
               )}
             </Button>
             <br />
             <small>
-              dont have an account ? sign up <Link to="/signup">here</Link>
+              немате свој профил ? регистрирајте те се <Link to="/signup">овде</Link>
             </small>
           </form>
         </Grid>

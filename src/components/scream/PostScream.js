@@ -86,7 +86,7 @@ class PostScream extends Component {
           >
             <CloseIcon />
           </MyButton>
-          <DialogTitle>Post a new scream</DialogTitle>
+          <DialogTitle>Објави нешто ново ... </DialogTitle>
           <DialogContent>
             <form onSubmit={this.handleSubmit}>
               <TextField
@@ -109,7 +109,7 @@ class PostScream extends Component {
                 className={classes.submitButton}
                 disabled={loading}
               >
-                Submit
+                Објави
                 {loading && (
                   <CircularProgress
                     size={30}

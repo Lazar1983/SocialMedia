@@ -76,7 +76,7 @@ class EditDetails extends Component {
           <EditIcon color="primary" />
         </MyButton>
         <Dialog open={this.state.open} onClose={this.handleClose} fullWidth maxWidth="sm">
-          <DialogTitle>Edit your details</DialogTitle>
+          <DialogTitle>Промени ги лични податоци</DialogTitle>
           <DialogContent>
             <form>
               <TextField
@@ -114,8 +114,8 @@ class EditDetails extends Component {
             </form>
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose} color="primary">Cancel</Button>
-            <Button onClick={this.handleSubmit} color="primary">Save</Button>
+            <Button onClick={this.handleClose} color="primary">Откажи</Button>
+            <Button onClick={this.handleSubmit} color="primary">Запиши</Button>
           </DialogActions>
         </Dialog>
       </Fragment>

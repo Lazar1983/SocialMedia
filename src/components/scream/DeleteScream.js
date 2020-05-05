@@ -54,14 +54,14 @@ class DeleteScream extends Component {
           maxWidth="sm"
         >
           <DialogTitle>
-            Are you sure you want to delete this scream ?
+            Дали сте сигурно дека сакате да ја избришете оваа објава ?
           </DialogTitle>
           <DialogActions>
             <Button onClick={this.handleClose} color="primary">
-              Cancel
+              Откажи
             </Button>
             <Button onClick={this.deleteScream} color="secondary">
-              Delete
+              Избриши
             </Button>
           </DialogActions>
         </Dialog>

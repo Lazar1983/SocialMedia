@@ -89,7 +89,7 @@ class Profile extends Component {
                 </Fragment>
               )}
               <CalendarToday color="primary" />{' '}
-              <span>Joined {dayjs(createdAt).format('MMM YYYY')}</span>
+              <span>Се придружи на {dayjs(createdAt).format('MMM YYYY')}</span>
             </div>
               <MyButton tip="Logout" onClick={this.handleLogout}>
                 <KeyboardReturn color="primary" />
@@ -100,7 +100,7 @@ class Profile extends Component {
       ) : (
         <Paper className={classes.paper}>
           <Typography variant="body2" align="center">
-            No profile found, please login again
+            Не е најден таков профил, ве молиме регистрирајте се повторно
           </Typography>
           <div className={classes.buttons}>
             <Button
@@ -109,7 +109,7 @@ class Profile extends Component {
               component={Link}
               to="/login"
             >
-              Login
+              Најави се
             </Button>
             <Button
               variant="contained"
@@ -117,7 +117,7 @@ class Profile extends Component {
               component={Link}
               to="/signup"
             >
-              Signup
+              Регистрирај се
             </Button>
           </div>
         </Paper>

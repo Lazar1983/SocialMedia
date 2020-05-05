@@ -79,14 +79,14 @@ class Notifications extends Component {
                 variant="body1"
                 to={`/users/${not.recipient}/scream/${not.screamId}`}
               >
-                {not.sender} {verb} your scream {time}
+                {not.sender} {verb} твоја објава {time}
               </Typography>
             </MenuItem>
           );
         })
       ) : (
         <MenuItem onClick={this.handleClose}>
-          You have no notifications yet
+          Немате нотификации
         </MenuItem>
       );
     return (

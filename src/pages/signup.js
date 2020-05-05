@@ -67,7 +67,7 @@ class signup extends Component {
         <Grid item sm>
           <img src={AppIcon} alt="logo" className={classes.image} />
           <Typography variant="h2" className={classes.pageTitle}>
-            Sign up
+            Регистрирај се
           </Typography>
           <form noValidate onSubmit={this.handleSubmit}>
             <TextField
@@ -130,14 +130,14 @@ class signup extends Component {
               className={classes.button}
               disabled={loading}
             >
-              Sign up
+              Регистрирај се
               {loading && (
                 <CircularProgress size={30} className={classes.progress} />
               )}
             </Button>
             <br />
             <small>
-              Already have a account ? login <Link to="/login">here</Link>
+              Веќе имате профил ? најавете се <Link to="/login">овде</Link>
             </small>
           </form>
         </Grid>
