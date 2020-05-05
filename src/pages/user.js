@@ -13,7 +13,7 @@ import { getUserData } from '../redux/actions/dataActions';
 
 class user extends Component {
   state = {
-    profile: null
+    profile: null,
     screamIdParam: null
   };
   componentDidMount() {
