@@ -57,6 +57,11 @@ class ScreamDialog extends Component {
       this.handleOpen();
     }
   }
+  componentDidMount() {
+    if (this.props.openDialog) {
+      this.handleOpen();
+    }
+  }
   handleOpen = () => {
     this.setState({ open: true });
     this.props.getScream(this.props.screamId);
@@ -153,7 +158,7 @@ ScreamDialog.propTypes = {
   clearErrors: PropTypes.func.isRequired,
   getScream: PropTypes.func.isRequired,
   screamId: PropTypes.string.isRequired,
-  userHandle: PropTypes.string.isRequired,
+  userHandle: PropTypes.string,
   scream: PropTypes.object.isRequired,
   UI: PropTypes.object.isRequired
 };
