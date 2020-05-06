@@ -106,7 +106,7 @@ class login extends Component {
             </Button>
             <br />
             <small>
-              немате свој профил ? регистрирајте те се <Link to="/signup">овде</Link>
+              немате свој профил ? регистрирајте се <Link to="/signup">овде</Link>
             </small>
           </form>
         </Grid>
