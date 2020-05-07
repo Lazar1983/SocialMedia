@@ -72,7 +72,7 @@ class EditDetails extends Component {
     const { classes } = this.props;
     return (
       <Fragment>
-        <MyButton tip="Edit details" onClick={this.handleOpen} btnClassName="button">
+        <MyButton tip="Промени ги личните податоци" onClick={this.handleOpen} btnClassName="button">
           <EditIcon color="primary" />
         </MyButton>
         <Dialog open={this.state.open} onClose={this.handleClose} fullWidth maxWidth="sm">
@@ -82,7 +82,7 @@ class EditDetails extends Component {
               <TextField
                 name="bio"
                 type="text"
-                label="Bio"
+                label="Повеќе за мене: "
                 multiline
                 rows="3"
                 placeholder="A short bio about yourself"
@@ -94,7 +94,7 @@ class EditDetails extends Component {
               <TextField
                 name="website"
                 type="text"
-                label="Website"
+                label="Моја бев страна или омилена: "
                 placeholder="Your personal/professinal website"
                 className={classes.textField}
                 value={this.state.website}
@@ -105,7 +105,7 @@ class EditDetails extends Component {
                 name="location"
                 type="text"
                 label="Location"
-                placeholder="Where you live"
+                placeholder="Каде живееш: "
                 className={classes.textField}
                 value={this.state.location}
                 onChange={this.handleChange}

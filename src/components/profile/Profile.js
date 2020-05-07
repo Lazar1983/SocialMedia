@@ -55,7 +55,7 @@ class Profile extends Component {
             <div className="image-wrapper">
               <img src={imageUrl} alt="profile" className="profile-image" />
               <input type="file" id="imageInput"  hidden="hidden" onChange={this.handleImageChange}/>
-              <MyButton tip="Edit profile picture" onClick={this.handleEditPicture} btnClassName="button">
+              <MyButton tip="Промени ја насловната фотографија" onClick={this.handleEditPicture} btnClassName="button">
                 <EditIcon color="primary" />
               </MyButton>
             </div>
@@ -89,9 +89,9 @@ class Profile extends Component {
                 </Fragment>
               )}
               <CalendarToday color="primary" />{' '}
-              <span>Се придружи на {dayjs(createdAt).format('MMM YYYY')}</span>
+              <span>Се придружив {dayjs(createdAt).format('MMM YYYY')}</span>
             </div>
-              <MyButton tip="Logout" onClick={this.handleLogout}>
+              <MyButton tip="Одјави се" onClick={this.handleLogout}>
                 <KeyboardReturn color="primary" />
               </MyButton>
             <EditDetails/>

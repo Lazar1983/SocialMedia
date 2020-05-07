@@ -120,7 +120,7 @@ class ScreamDialog extends Component {
           <Typography variant="body1">{body}</Typography>
           <LikeButton screamId={screamId} />
           <span>{likeCount} допаѓања</span>
-          <MyButton tip="comments">
+          <MyButton tip="коментари">
             <ChatIcon color="primary" />
           </MyButton>
           <span>{commentCount} коментари</span>
@@ -134,7 +134,7 @@ class ScreamDialog extends Component {
       <Fragment>
         <MyButton
           onClick={this.handleOpen}
-          tip="Expand scream"
+          tip="Прегледај ја објавата"
           tipClassName={classes.expandButton}
         >
           <UnfoldMore color="primary" />
@@ -146,7 +146,7 @@ class ScreamDialog extends Component {
           maxWidth="sm"
         >
           <MyButton
-            tip="Close"
+            tip="Затвори"
             onClick={this.handleClose}
             tipClassName={classes.closeButton}
           >

@@ -74,7 +74,7 @@ class signup extends Component {
               id="email"
               name="email"
               type="email"
-              label="Email"
+              label="е-маил"
               className={classes.textField}
               helperText={errors.email}
               error={errors.email ? true : false}
@@ -86,7 +86,7 @@ class signup extends Component {
               id="password"
               name="password"
               type="password"
-              label="Password"
+              label="Лозинка"
               className={classes.textField}
               helperText={errors.password}
               error={errors.password ? true : false}
@@ -110,7 +110,7 @@ class signup extends Component {
               id="handle"
               name="handle"
               type="text"
-              label="Handle"
+              label="Корисничко име"
               className={classes.textField}
               helperText={errors.handle}
               error={errors.handle ? true : false}

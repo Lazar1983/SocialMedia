@@ -41,7 +41,7 @@ class DeleteScream extends Component {
     return (
       <Fragment>
         <MyButton
-          tip="Delete Scream"
+          tip="Избриши објава"
           onClick={this.handleOpen}
           btnClassName={classes.deleteButton}
         >

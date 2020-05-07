@@ -70,7 +70,7 @@ class PostScream extends Component {
     } = this.props;
     return (
       <Fragment>
-        <MyButton onClick={this.handleOpen} tip="Post a Scream">
+        <MyButton onClick={this.handleOpen} tip="Нова објава">
           <AddIcon />
         </MyButton>
         <Dialog
@@ -80,7 +80,7 @@ class PostScream extends Component {
           maxWidth="sm"
         >
           <MyButton
-            tip="Close"
+            tip="Затвори"
             onClick={this.handleClose}
             tipClassName={classes.closeButton}
           >
@@ -92,7 +92,7 @@ class PostScream extends Component {
               <TextField
                 name="body"
                 type="text"
-                label="SCREAM!!"
+                label="Твоја објава"
                 multiline
                 rows="3"
                 placeholder="Scream at your fellows"

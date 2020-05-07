@@ -23,7 +23,7 @@ class Navbar extends Component {
             <Fragment>
               <PostScream/>
               <Link to="/">
-                <MyButton tip="Home">
+                <MyButton tip="Насловна">
                   <HomeIcon/>
                 </MyButton>
               </Link>

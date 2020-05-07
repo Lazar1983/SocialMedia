@@ -86,12 +86,12 @@ class Notifications extends Component {
         })
       ) : (
         <MenuItem onClick={this.handleClose}>
-          Немате нотификации
+          Немате нови известувања
         </MenuItem>
       );
     return (
       <Fragment>
-        <Tooltip placement="top" title="Notifications">
+        <Tooltip placement="top" title="Известувања">
           <IconButton
             aria-owns={anchorEl ? 'simple-menu' : undefined}
             aria-haspopup="true"

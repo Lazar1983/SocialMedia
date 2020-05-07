@@ -70,7 +70,7 @@ class Scream extends Component {
           <Typography variant="body1">{body}</Typography>
           <LikeButton screamId={screamId} />
           <span>{likeCount} допаѓања </span>
-          <MyButton tip='comments'>
+          <MyButton tip='коментари'>
             <ChatIcon color='primary' />
           </MyButton>
           <span>{commentCount} коментари </span>
